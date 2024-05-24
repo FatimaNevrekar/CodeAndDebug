@@ -1,0 +1,8 @@
+ASSIGNMENT 1
+Q1. Write a java program to print “Hello World”.
+Q2. Write a java program to print name without using double quotes.
+Q3. Write a java program to print name and surname in different lines.
+Note: you can only use 1 print statement.
+Q4. Write a java program to take user input using scanner class.
+Q5. Write a program in java to print double quotes(“), single quotes(‘) and
+backslash(/).
