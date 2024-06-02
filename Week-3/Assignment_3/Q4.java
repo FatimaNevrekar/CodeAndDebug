@@ -22,20 +22,27 @@ public class Q4 {
 			a[i]=sc.nextInt();
 		}
 		
-		int mid = n/2;
-		System.out.println("Mid: "+mid);
+		int mid = n%2==1?n/2+1:n/2;
+//		System.out.println("Mid: "+mid);
+//
+//		for(int i=0;i<mid;i++) {
+//			b[i]=a[mid+i];
+//		}
+//		
+//		for(int i=0;i<mid;i++) {
+//			b[mid+i]=a[i];
+//		}
 
-		for(int i=0;i<mid;i++) {
-			b[i]=a[mid+i];
+		for(int i=0;i<n/2;i++) {
+			int temp=a[i];
+			a[i]=a[mid];
+			a[mid]=temp;
+			mid++;
 		}
-		
-		for(int i=0;i<mid;i++) {
-			b[mid+i]=a[i];
-		}
-		
+//		
 		System.out.println("The Elements of Output Array:");
 		for(int i=0;i<n;i++) {
-			System.out.println(b[i]);
+			System.out.println(a[i]);
 		}
 		
 	}
